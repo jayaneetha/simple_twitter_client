@@ -37,15 +37,15 @@ class OAuth {
     }
 
     function get_home_timeline($bearer_token) {
-        $url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=jayaneetha&count=2";
+        $url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=Jayaneetha&count=100";
         $options = array(
             'http' => array(
                 'method' => "GET",
-                'header' => "Authorization: Basic " . $bearer_token,
+                'header' => "Authorization: Bearer " . $bearer_token,
             ),
         );
         $context = stream_context_create($options);
-        echo $result = file_get_contents($url, FALSE, $context);
+        return $result = file_get_contents($url, FALSE, $context);
     }
 
 }

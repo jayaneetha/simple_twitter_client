@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
+        <a href="userTimeline.php">User Timeline</a>
         <?php
         /*
           echo "Hello Welcome to Simple Twitter Client <br><br>";
@@ -37,10 +38,7 @@ and open the template in the editor.
 
 
          */
-        include './OAuth.php';
-        $o = new OAuth();
-        $bearer_token = $o->obtain_bearer_token($o->consumer('bq8wTOty6cbhfkj5X4upSu4e7', '0buGOylhAXVsDqq1LHNigUvSfbSWSpqy2CIteASE5c1lfi9Dix'));
-        $o->get_home_timeline($bearer_token);
+        
         ?>
     </body>
 </html>
