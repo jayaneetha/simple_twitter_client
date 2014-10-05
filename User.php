@@ -28,21 +28,36 @@ class User {
     var $verified;
     var $profile_image;
 
-    public function __construct($id, $name, $screen_name, $location, $description, $url, $is_protected, $followers_count, $friends_count, $listed_count, $favourites_count, $time_zone, $verified, $profile_image) {
-        $this->id = $id;
-        $this->name = $name;
-        $this->screen_name = $screen_name;
-        $this->location = $location;
-        $this->description = $description;
-        $this->url = $url;
-        $this->is_protected = $is_protected;
-        $this->followers_count = $followers_count;
-        $this->friends_count = $friends_count;
-        $this->listed_count = $listed_count;
-        $this->favourites_count = $favourites_count;
-        $this->time_zone = $time_zone;
-        $this->verified = $verified;
-        $this->profile_image = $profile_image;
+    public function __construct() {
+        
+    }
+
+    function load_user_data($id, $bearer_token) {
+        $url = "https://api.twitter.com/1.1/users/show.json?screen_name=" . $id;
+        $options = array(
+            'http' => array(
+                'method' => "GET",
+                'header' => "Authorization: Bearer " . $bearer_token,
+            ),
+        );
+        $context = stream_context_create($options);
+        $result = file_get_contents($url, FALSE, $context);
+        $decode = json_decode($result);
+        
+        $this->id = $decode->id;
+        $this->name = $decode->name;
+        $this->screen_name = $decode->screen_name;
+        $this->location = $decode->location;
+        $this->description = $decode->description;
+        $this->url = $decode->url;
+        $this->is_protected = $decode->protected;
+        $this->followers_count = $decode->followers_count;
+        $this->friends_count = $decode->friends_count;
+        $this->listed_count = $decode->listed_count;
+        $this->favourites_count = $decode->favourites_count;
+        $this->time_zone = $decode->time_zone;
+        $this->verified = $decode->verified;
+        $this->profile_image = $decode->profile_image_url;
     }
 
 }

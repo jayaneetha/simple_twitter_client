@@ -39,18 +39,34 @@ and open the template in the editor.
 
          */
 
+//        include './OAuth.php';
+//        include './User.php';
+//        $o = new OAuth();
+//        $u = new User();
+//        $bearer_token = $o->obtain_bearer_token($o->consumer('bq8wTOty6cbhfkj5X4upSu4e7', '0buGOylhAXVsDqq1LHNigUvSfbSWSpqy2CIteASE5c1lfi9Dix'));
+//       //echo  $usertimeline = $o->get_home_timeline($bearer_token);
+//        //$decode = json_decode($usertimeline);
+//        //echo count($decode);
+////        for ($index = 0; $index < count($decode); $index++) {
+////            echo '<br>';
+////            echo '<br>';
+////            echo '<br>';
+////            print_r($decode[$index]);
+////        }
+//        
+//        $u->load_user_data('mashable', $bearer_token);
+
+        include './User.php';
         include './OAuth.php';
         $o = new OAuth();
+        $u = new User();
         $bearer_token = $o->obtain_bearer_token($o->consumer('bq8wTOty6cbhfkj5X4upSu4e7', '0buGOylhAXVsDqq1LHNigUvSfbSWSpqy2CIteASE5c1lfi9Dix'));
-       echo  $usertimeline = $o->get_home_timeline($bearer_token);
-        $decode = json_decode($usertimeline);
-        //echo count($decode);
-//        for ($index = 0; $index < count($decode); $index++) {
-//            echo '<br>';
-//            echo '<br>';
-//            echo '<br>';
-//            print_r($decode[$index]);
-//        }
+        $u->load_user_data('mashable', $bearer_token);
         ?>
+        <div>
+            <h3><?php echo $u->name; ?>
+                <img src="<?php echo $u->profile_image; ?>" width="50"/>
+            </h3>
+        </div>
     </body>
 </html>
