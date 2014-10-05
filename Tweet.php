@@ -27,6 +27,9 @@ class Tweet {
     var $favorite_count;
     var $favorited;
     var $retweeted;
+    var $hashtags;
+    var $user_mensions;
+    
 
     public function __construct($created, $id, $text, $in_reply_to_status_id, $in_reply_to_user_id, $user, $geo, $coordinates, $place, $contributors, $retweet_count, $favorite_count, $favorited, $retweeted) {
         $this->created = $created;

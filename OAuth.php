@@ -37,7 +37,7 @@ class OAuth {
     }
 
     function get_home_timeline($bearer_token) {
-        $url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=Jayaneetha&count=100";
+        $url = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=Jayaneetha&count=100&since_id=518158555300786178";
         $options = array(
             'http' => array(
                 'method' => "GET",

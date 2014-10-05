@@ -1,0 +1,88 @@
+
+[
+   {
+    "id": 270430787,
+    "id_str": "270430787",
+    "name": "manoj vidanage",
+    "screen_name": "sola7m",
+    "location": "Gampaha ,Sri Lanka.",
+    "description": "ICT UnderGraduate@RUSL | #Blogger |#maniyatalks | #InsightLK| #Brightron | #Microsoft |",
+    "url": null,
+    "entities":  {
+      "description":  {
+        "urls":  []
+      }
+    },
+    "protected": false,
+    "followers_count": 124,
+    "friends_count": 404,
+    "listed_count": 2,
+    "created_at": "Tue Mar 22 16:16:12 +0000 2011",
+    "favourites_count": 3,
+    "utc_offset": 19800,
+    "time_zone": "Sri Jayawardenepura",
+    "geo_enabled": true,
+    "verified": false,
+    "statuses_count": 200,
+    "lang": "en",
+    "status":  {
+      "created_at": "Fri Sep 12 18:32:13 +0000 2014",
+      "id": 510496117176274940,
+      "id_str": "510496117176274944",
+      "text": "@MobitelSriLanka 7.00 p.m. -00.0 a.m. වෙනකන් අපේ ඩොන්ගල් වල සිග්නල් නෑ . ඉක්මනටම් මොනවා හරි කරලා විසදුමක් දෙන්න. අපි මිහින්තලේ...!!!",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": 124139016,
+      "in_reply_to_user_id_str": "124139016",
+      "in_reply_to_screen_name": "MobitelSriLanka",
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [],
+        "symbols":  [],
+        "urls":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "MobitelSriLanka",
+            "name": "Mobitel Pvt Ltd.",
+            "id": 124139016,
+            "id_str": "124139016",
+            "indices":  [
+              0,
+              16
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "lang": "si"
+    },
+    "contributors_enabled": false,
+    "is_translator": false,
+    "is_translation_enabled": false,
+    "profile_background_color": "131516",
+    "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/482481930907025409/c5YUuooF.jpeg",
+    "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/482481930907025409/c5YUuooF.jpeg",
+    "profile_background_tile": true,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/418998995780771840/ZiXm-EJh_normal.jpeg",
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/418998995780771840/ZiXm-EJh_normal.jpeg",
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/270430787/1401172395",
+    "profile_link_color": "0E85B0",
+    "profile_sidebar_border_color": "FFFFFF",
+    "profile_sidebar_fill_color": "EFEFEF",
+    "profile_text_color": "333333",
+    "profile_use_background_image": true,
+    "default_profile": false,
+    "default_profile_image": false,
+    "following": true,
+    "follow_request_sent": false,
+    "notifications": false
+  }
+]
