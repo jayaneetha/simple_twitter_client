@@ -55,13 +55,19 @@ and open the template in the editor.
 ////        }
 //        
 //        $u->load_user_data('mashable', $bearer_token);
+//        include './User.php';
+//        include './OAuth.php';
+//        $o = new OAuth();
+//        $u = new User();
+//        $bearer_token = $o->obtain_bearer_token($o->consumer('bq8wTOty6cbhfkj5X4upSu4e7', '0buGOylhAXVsDqq1LHNigUvSfbSWSpqy2CIteASE5c1lfi9Dix'));
+//        $u->load_user_data('mashable', $bearer_token);
 
-        include './User.php';
+
+
         include './OAuth.php';
         $o = new OAuth();
-        $u = new User();
         $bearer_token = $o->obtain_bearer_token($o->consumer('bq8wTOty6cbhfkj5X4upSu4e7', '0buGOylhAXVsDqq1LHNigUvSfbSWSpqy2CIteASE5c1lfi9Dix'));
-        $u->load_user_data('mashable', $bearer_token);
+        $o->get_home_timeline($bearer_token)
         ?>
         <div>
             <h3><?php echo $u->name; ?>
